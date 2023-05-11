@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "PICDUINO-rescue")(type "Legacy")(uri "${KIPRJMOD}/PICDUINO-rescue.lib")(options "")(descr ""))
+)
