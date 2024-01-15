@@ -1,0 +1,317 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     _i2caddr
+018     _vccstate
+019     x_pos
+01A     y_pos
+01B     text_size
+01C.0   wrap
+01C.1   init
+01C.2   readm
+01C.3   flag1
+01C.4   flag2
+01C.5   flag3
+01C.6   flag4
+01C.7   flag28
+01D-41C OLED_buffer
+41D     vccstate
+41E     i2caddr
+41F-51E Logo
+51F-524 horas
+525-52D data
+52E-539 hori
+53A-545 tmr
+546-549 seg1
+54A-54D ter
+54E-551 qua
+552-555 qui
+556-559 sex
+55A-55D sab
+55E-561 dom
+562.0   flag30
+562.1   flagi
+562.2   flags
+562.3   flagr
+563     i
+564     position_count
+565     seg
+566     min
+567     hr
+568     s_dia
+569     dia
+56A     mes
+56B     ano
+56C-56D debouncing
+56E-56F register_cont
+570-571 register_cont1
+572-573 aux
+574-575 aux1
+576-577 p2trava
+578-579 p2menu
+57A-57C menu1
+57D-57F menu2
+580-582 menu3
+583-585 menu4
+586-590 horimetro
+591-59B mem
+59C-59D @DIV1616.P1
+59C-5A3 atualiza_menu.txt1
+59C     @delay_ms1.P1
+59C     MAIN.@SCRATCH1
+59C     escrita.@SCRATCH1
+59C     lemem.@SCRATCH1
+59C     initdisp.@SCRATCH1
+59C     inithori.@SCRATCH1
+59D     MAIN.@SCRATCH2
+59D     escrita.@SCRATCH2
+59D     lemem.@SCRATCH2
+59D     inithori.@SCRATCH2
+59E-59F conv_valor.buff
+59E-59F @DIV1616.P1
+59E     MAIN.@SCRATCH3
+59E     lemem.@SCRATCH3
+59F     lemem.@SCRATCH4
+5A0-5A1 conv_valor.aux
+5A0     @DIV1616.@SCRATCH1
+5A0     lemem.@SCRATCH5
+5A1     lemem.@SCRATCH6
+5A2     conv_valor.dezena
+5A3     conv_valor.unidade
+5A4-5A8 atualiza_menu.txt2
+5A4     conv_valor.centena
+5A5     conv_valor.milhar
+5A6     conv_valor.dmilhar
+5A7-5A8 conv_valor.aux1
+5A9-5AE atualiza_menu.txt3
+5A9     conv_valor.@SCRATCH1
+5AA     conv_valor.@SCRATCH2
+5AF-5B4 atualiza_menu.txt4
+5B5-5BA atualiza_menu.txt5
+5BB-5C2 atualiza_menu.txt6
+5C3-5C6 atualiza_menu.txt7
+5C7-5CA atualiza_menu.txt8
+5CB-5CE atualiza_menu.txt9
+5CF-5D9 atualiza_menu.txt10
+5DA-5E4 atualiza_menu.txt11
+5E5-5EF atualiza_menu.txt12
+5F0-5F7 atualiza_menu.txt13
+5F8-5FF atualiza_menu.txt14
+600-609 atualiza_menu.txt15
+60A     @I2C_READ_1.P1
+60A     OLED_DrawText.x
+60A     OLED_InvertDisplay.i
+60A-60B OLED_ClearDisplay.i
+60A-60B OLED_Display.n2
+60A     OLED_DrawRect.x
+60A     atualiza_menu.@SCRATCH1
+60A     DS1307_display.@SCRATCH1
+60A     atualiza_disp.@SCRATCH1
+60B     OLED_DrawRect.y
+60B     OLED_DrawText.y
+60B     @I2C_READ_1.@SCRATCH1
+60C     OLED_DrawRect.w
+60C-60D OLED_Display.p
+60C-60D OLED_DrawText._text
+60C     @I2C_READ_1.@SCRATCH2
+60C     OLED_ClearDisplay.@SCRATCH1
+60D     OLED_DrawRect.h
+60D     OLED_ClearDisplay.@SCRATCH2
+60E     OLED_DrawText.size
+60E     i
+60E     OLED_DrawRect.@SCRATCH1
+60F     OLED_DrawFastHLine.x
+60F     OLED_TextSize.t_size
+60F     OLED_GotoXY.x
+60F     OLED_Display.@SCRATCH1
+60F     OLED_DrawText.@SCRATCH1
+610     OLED_Print.c
+610     OLED_GotoXY.y
+610     OLED_DrawFastHLine.y
+610     OLED_Display.@SCRATCH2
+611     OLED_DrawFastHLine.w
+611.0   OLED_Print._color
+611     OLED_Display.@SCRATCH3
+612     OLED_DrawFastHLine.color
+612     OLED_Print.i
+612     OLED_Display.@SCRATCH4
+613     OLED_Print.j
+613     OLED_DrawFastHLine.@SCRATCH1
+614     OLED_Print.line
+615     OLED_Print.@SCRATCH1
+616     OLED_Print.@SCRATCH2
+617     OLED_Print.@SCRATCH3
+618     OLED_FillRect.x
+619     OLED_FillRect.y
+61A     OLED_FillRect.w
+61B     OLED_FillRect.h
+61B-61C @READ_PROGRAM_MEMORY.P1
+61B     OLED_command.c
+61C     OLED_FillRect.color
+61C     OLED_command.control
+61D-61E OLED_FillRect.i
+61F     OLED_DrawFastVLine.x
+620     OLED_DrawFastVLine.y
+621     OLED_DrawFastVLine.h
+622     OLED_DrawFastVLine.color
+623     OLED_DrawFastVLine.@SCRATCH1
+624-625 OLED_DrawLine.x0
+626-627 OLED_DrawLine.y0
+628-629 OLED_DrawLine.x1
+62A-62B OLED_DrawLine.y1
+62C     OLED_DrawLine.color
+62D.0   OLED_DrawLine.steep
+62E     OLED_DrawLine.ystep
+62F     OLED_DrawLine.dx
+630     OLED_DrawLine.dy
+631-632 OLED_DrawLine.err
+633-634 t
+635-636 t
+637-638 t
+639-63A t
+63B     OLED_DrawPixel.x
+63B     OLED_DrawLine.@SCRATCH1
+63C     OLED_DrawPixel.y
+63C     OLED_DrawLine.@SCRATCH2
+63D     OLED_DrawPixel.color
+63D     OLED_DrawLine.@SCRATCH3
+63E     OLED_DrawPixel.@SCRATCH1
+63E     OLED_DrawLine.@SCRATCH4
+63F     OLED_DrawPixel.@SCRATCH2
+640     OLED_DrawPixel.@SCRATCH3
+641     escreve_ds.hr
+641     timer_0.@SCRATCH1
+641     trata_teclas.@SCRATCH1
+642     escreve_ds.min
+643     escreve_ds.s_dia
+644     escreve_ds.dia
+645     escreve_ds.mes
+646     escreve_ds.ano
+647     @delay_ms2.P1
+647     @I2C_WRITE_1.P2
+647     escreve_ds.@SCRATCH1
+648     @DIVS88.P1
+649     @DIVS88.P1
+64A     @DIVS88.@SCRATCH1
+64B     @DIVS88.@SCRATCH2
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+10EE  @READ_PROGRAM_MEMORY
+0F1A  @delay_ms1
+18D2  @I2C_READ_1
+02F2  @I2C_WRITE_1
+0096  Font
+01B0  Font2
+0F44  OLED_command
+0FAE  OLED_Begin
+12A8  OLED_DrawPixel
+110E  OLED_Display
+10C8  OLED_ClearDisplay
+1398  OLED_DrawLine
+1DEA  OLED_DrawFastHLine
+1592  OLED_DrawFastVLine
+15BC  OLED_FillRect
+1E16  OLED_DrawRect
+2034  OLED_InvertDisplay
+17A8  OLED_DrawText
+1276  OLED_GotoXY
+1294  OLED_TextSize
+15FA  OLED_Print
+0BE6  inicializar_flags
+0344  @delay_ms2
+0B96  timer_0
+2D2A  MAIN
+0D1A  @DIV1616
+04AE  trata_teclas
+2054  atualiza_menu
+2B78  @goto11319
+2BAA  @goto11322
+2BD6  @goto11345
+1BC2  display_dia
+191E  DS1307_display
+02A6  @DIVS88
+036C  escreve_ds
+1CAA  le_DS1307
+0C2C  conv_valor
+1E80  atualiza_disp
+2C04  escrita
+0D60  lemem
+1246  initdisp
+17F2  inithori
+2D2A  @cinit
+
+
+User Memory space: 
+ 007FF8-007FFF  Page
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\Horimetro SH1106\
+
+Project Files:
+    Horimetro.c
+    Horimetro.h
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    OLED_I2C.c
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdint.h
+
+Units:
+    C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\Horimetro SH1106\Horimetro (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Horimetro.err
+    Ext Symbols: Horimetro.esym
+    INHX32:      Horimetro.hex
+    Symbols:     Horimetro.sym
+    List:        Horimetro.lst
+    Debug/COFF:  Horimetro.cof
+    Project:     Horimetro.PJT
+    Call Tree:   Horimetro.tre
+    Statistics:  Horimetro.sta

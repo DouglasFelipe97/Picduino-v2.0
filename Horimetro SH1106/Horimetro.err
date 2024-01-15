@@ -1,0 +1,13 @@
+>>> Warning 229 "Horimetro.c" Line 751(1,1): Subscript out of range
+>>> Warning 229 "Horimetro.c" Line 752(1,1): Subscript out of range
+>>> Warning 229 "Horimetro.c" Line 848(1,1): Subscript out of range
+>>> Warning 229 "Horimetro.c" Line 849(1,1): Subscript out of range
+>>> Warning 216 "Horimetro.c" Line 919(0,1): Interrupts disabled during call to prevent re-entrancy:  (@I2C_WRITE_1)
+>>> Warning 216 "Horimetro.c" Line 919(0,1): Interrupts disabled during call to prevent re-entrancy:  (@delay_ms2)
+>>> Warning 216 "Horimetro.c" Line 919(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIVS88)
+>>> Warning 202 "Horimetro.c" Line 22(15,19): Variable never used:   Logo
+>>> Warning 202 "Horimetro.c" Line 53(22,27): Variable never used:   readm
+>>> Warning 202 "Horimetro.c" Line 54(13,14): Variable never used:   i
+>>> Warning 202 "Horimetro.c" Line 55(34,48): Variable never used:   register_cont1
+      Memory usage:   ROM=47%      RAM=70% - 79%
+      0 Errors,  11 Warnings.
