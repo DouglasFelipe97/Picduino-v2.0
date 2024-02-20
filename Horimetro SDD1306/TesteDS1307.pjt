@@ -1,0 +1,27 @@
+[PROJECT]
+Target=C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\TesteDS1307.hex
+Development_Mode=
+Processor_Text=PIC18F4550
+ToolSuite=CCS
+Processor=0x4550
+[C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\TesteDS1307]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\TesteDS1307.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Units]
+Link=0
+Count=1
+1=C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\TesteDS1307
+[Opened Files]
+1=..\FW\TesteDS1307.c
+2=TesteDS1307.h
+3=..\..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+4=SSD1306OLED.c
+5=

@@ -1,0 +1,300 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     _i2caddr
+018     _vccstate
+019     x_pos
+01A     y_pos
+01B     text_size
+01C.0   wrap
+01C.1   init
+01C.2   readm
+01C.3   flag1
+01C.4   flag2
+01C.5   flag3
+01C.6   flag4
+01C.7   flag28
+01D-41C ssd1306_buffer
+41D     vccstate
+41E     i2caddr
+41F-424 horas
+425-42F data
+430-43B hori
+43C-447 tmr
+448-44F txt1
+450-454 txt2
+455-45A txt3
+45B-460 txt4
+461-466 txt5
+467-46E txt6
+46F-472 txt7
+473-476 txt8
+477-47A txt9
+47B-485 txt10
+486-490 txt11
+491-49B txt12
+49C-4A3 txt13
+4A4-4AB seg1
+4AC-4B1 ter
+4B2-4B8 qua
+4B9-4BF qui
+4C0-4C5 sex
+4C6-4CC sab
+4CD-4D4 dom
+4D5.0   flag30
+4D5.1   flagi
+4D5.2   flags
+4D5.3   flagr
+4D6     i
+4D7     position_count
+4D8     seg
+4D9     min
+4DA     hr
+4DB     s_dia
+4DC     dia
+4DD     mes
+4DE     ano
+4DF-4E0 debouncing
+4E1-4E2 register_cont
+4E3-4E4 register_cont1
+4E5-4E6 aux
+4E7-4E8 aux1
+4E9-4EB menu1
+4EC-4EE menu2
+4EF-4F1 menu3
+4F2-4F4 menu4
+4F5-4F7 menu5
+4F8-4FA sub2
+4FB-4FD sub3
+4FE-500 sub4
+501-50B horimetro
+50C-50D SSD1306_ClearDisplay.i
+50C     @delay_ms1.P1
+50C-50D SSD1306_Display.n2
+50C     SSD1306_DrawRect.x
+50C     @I2C_READ_1.P1
+50C-50D @DIV1616.P2
+50C     SSD1306_DrawText.x
+50C     MAIN.@SCRATCH1
+50C     DS1307_display.@SCRATCH1
+50C     atualiza_disp.@SCRATCH1
+50D     SSD1306_DrawText.y
+50D     SSD1306_DrawRect.y
+50D     @I2C_READ_1.@SCRATCH1
+50D     MAIN.@SCRATCH2
+50E-50F conv_valor.buff
+50E     SSD1306_DrawRect.w
+50E-50F SSD1306_DrawText._text
+50E-50F @DIV1616.P1
+50E-50F SSD1306_Display.p
+50E     @I2C_READ_1.@SCRATCH2
+50E     SSD1306_ClearDisplay.@SCRATCH1
+50E     MAIN.@SCRATCH3
+50F     SSD1306_DrawRect.h
+50F     SSD1306_ClearDisplay.@SCRATCH2
+510     x
+510-511 conv_valor.aux
+510     SSD1306_DrawText.size
+510     SSD1306_DrawRect.@SCRATCH1
+510     @DIV1616.@SCRATCH1
+511     SSD1306_DrawFastHLine.x
+511     SSD1306_GotoXY.x
+511     SSD1306_TextSize.t_size
+511     SSD1306_Display.@SCRATCH1
+511     SSD1306_DrawText.@SCRATCH1
+512     conv_valor.dezena
+512     SSD1306_GotoXY.y
+512     SSD1306_Print.c
+512     SSD1306_DrawFastHLine.y
+512     SSD1306_Display.@SCRATCH2
+513     SSD1306_DrawFastHLine.w
+513.0   SSD1306_Print._color
+513     conv_valor.unidade
+513     SSD1306_Display.@SCRATCH3
+514     SSD1306_Print.i
+514     SSD1306_DrawFastHLine.color
+514     conv_valor.centena
+514     SSD1306_Display.@SCRATCH4
+515     conv_valor.milhar
+515     SSD1306_Print.j
+515     SSD1306_DrawFastHLine.@SCRATCH1
+516     conv_valor.dmilhar
+516     SSD1306_Print.line
+517-518 conv_valor.aux1
+517     SSD1306_Print.@SCRATCH1
+518     SSD1306_Print.@SCRATCH2
+519     SSD1306_Print.@SCRATCH3
+519     conv_valor.@SCRATCH1
+51A     SSD1306_FillRect.x
+51A     conv_valor.@SCRATCH2
+51B     SSD1306_FillRect.y
+51C     SSD1306_FillRect.w
+51D     ssd1306_command.c
+51D     SSD1306_FillRect.h
+51D-51E @READ_PROGRAM_MEMORY.P1
+51E     ssd1306_command.control
+51E     SSD1306_FillRect.color
+51F-520 SSD1306_FillRect.i
+521     SSD1306_DrawFastVLine.x
+522     SSD1306_DrawFastVLine.y
+523     SSD1306_DrawFastVLine.h
+524     SSD1306_DrawFastVLine.color
+525     SSD1306_DrawFastVLine.@SCRATCH1
+526-527 SSD1306_DrawLine.x0
+528-529 SSD1306_DrawLine.y0
+52A-52B SSD1306_DrawLine.x1
+52C-52D SSD1306_DrawLine.y1
+52E     SSD1306_DrawLine.color
+52F.0   SSD1306_DrawLine.steep
+530     SSD1306_DrawLine.ystep
+531     SSD1306_DrawLine.dx
+532     SSD1306_DrawLine.dy
+533-534 SSD1306_DrawLine.err
+535-536 t
+537-538 t
+539-53A t
+53B-53C t
+53D     SSD1306_DrawPixel.x
+53D     SSD1306_DrawLine.@SCRATCH1
+53E     SSD1306_DrawPixel.y
+53E     SSD1306_DrawLine.@SCRATCH2
+53F     SSD1306_DrawPixel.color
+53F     SSD1306_DrawLine.@SCRATCH3
+540     SSD1306_DrawPixel.@SCRATCH1
+540     SSD1306_DrawLine.@SCRATCH4
+541     SSD1306_DrawPixel.@SCRATCH2
+542     SSD1306_DrawPixel.@SCRATCH3
+543     escreve_ds.hr
+543     timer_0.@SCRATCH1
+543     trata_teclas.@SCRATCH1
+544     escreve_ds.min
+544     timer_0.@SCRATCH2
+545     escreve_ds.s_dia
+545     timer_0.@SCRATCH3
+546     escreve_ds.dia
+546     timer_0.@SCRATCH4
+547     escreve_ds.mes
+547     timer_0.@SCRATCH5
+548     escreve_ds.ano
+549     @I2C_WRITE_1.P1
+549     @delay_ms2.P2
+549     escreve_ds.@SCRATCH1
+54A     @DIV88.P1
+54B     @DIV88.P1
+54C     @DIV88.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0DF8  @READ_PROGRAM_MEMORY
+0C10  @delay_ms1
+10D8  @I2C_READ_1
+02D2  @I2C_WRITE_1
+0096  Font
+01B0  Font2
+0C3A  ssd1306_command
+0CA4  SSD1306_Begin
+1156  SSD1306_DrawPixel
+0E18  SSD1306_Display
+0F4A  SSD1306_ClearDisplay
+1246  SSD1306_DrawLine
+1B50  SSD1306_DrawFastHLine
+1440  SSD1306_DrawFastVLine
+146A  SSD1306_FillRect
+1B7C  SSD1306_DrawRect
+1656  SSD1306_DrawText
+1124  SSD1306_GotoXY
+1142  SSD1306_TextSize
+14A8  SSD1306_Print
+0F70  inicializar_flags
+0324  @delay_ms2
+0A8A  timer_0
+26BE  MAIN
+0FA4  @DIV1616
+048E  trata_teclas
+1D96  atualiza_menu
+2632  @goto11288
+2664  @goto11291
+2690  @goto11305
+1944  display_dia
+16A0  DS1307_display
+02A6  @DIV88
+034C  escreve_ds
+1A1E  le_DS1307
+0FEA  conv_valor
+1BE2  atualiza_disp
+26BE  @cinit
+
+
+User Memory space: 
+ 007FF8-007FFF  Page
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\
+
+Project Files:
+    TesteDS1307.c
+    TesteDS1307.h
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    SSD1306OLED.c
+    ..\..\..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stdint.h
+
+Units:
+    C:\Users\Laboratorio\Desktop\Douglas Autoban\Projetos\Horimetro\Firmware\FW\TesteDS1307 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      TesteDS1307.err
+    Ext Symbols: TesteDS1307.esym
+    INHX32:      TesteDS1307.hex
+    Symbols:     TesteDS1307.sym
+    List:        TesteDS1307.lst
+    Debug/COFF:  TesteDS1307.cof
+    Project:     TesteDS1307.PJT
+    Call Tree:   TesteDS1307.tre
+    Statistics:  TesteDS1307.sta
